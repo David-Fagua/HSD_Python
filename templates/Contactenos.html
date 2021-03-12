@@ -3,8 +3,8 @@
 <head>
   <title>Iniciar Sesión</title>
 
-  <?py include 'partials/head.py';?>
-  <?py include 'partials/menu.py';?>
+  {% extends "layout.html" %}
+  {% block content %}
 
 </br>
 
@@ -47,5 +47,4 @@
 </div>
 </div>
 
-<?py include 'partials/menufinal.py';?>
-<?py include 'partials/footer.py';?>
+{% endblock %}

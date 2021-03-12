@@ -1,0 +1,147 @@
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="{{url_for('static', filename='icon/Logo.png')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="{{ url_for('static', filename='css/index_style.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/timeline.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/startmin.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/morris.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+  
+<br/>
+<br/>
+<br/>
+
+<div>
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #47A5B4;">
+    <a href="/" class="navbar-brand" >
+      <img src="{{url_for('static', filename='icon/logo.png')}}" width="40" height="40" alt="HSD PLUS">
+    </a>
+    <a href="/" class="navbar-brand" style="color: #ffffff;">HSD PLUS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <a href="/Catalogo" class="nav-link" style="color: #ffffff;">Catalogo
+        </a>
+        <a href="/Contactenos" class="nav-link" style="color: #ffffff;">Contactenos
+        </a>
+        <a href="/Quienessomos" class="nav-link" style="color: #ffffff;">¿Quienes Somos?
+        </a>
+        <a href="/MisionVision" class="nav-link" style="color: #ffffff;">Misión y Visión
+        </a>
+        <a href="/Portafolio" class="nav-link" style="color: #ffffff;">Portafolio
+        </a>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-left navbar-top-links">
+      <li class="dropdown navbar-inverse">
+        <div>
+          <button type="button" class="btn btn-link" >
+            <a href="/start"  >
+              <img src="{{url_for('static', filename='icon/ingles.png')}}" width="40" height="40" alt="">
+            </a>
+          </button>
+        </div>
+      </li>
+    </ul>
+
+  <!--Desplegable-->
+
+  <ul class="nav navbar-left navbar-top-links">
+    <li class="dropdown navbar-inverse">
+      <button  class="btn btn-link" class="btn btn-sec"  data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+          <a >
+              <img src="{{url_for('static', filename='icon/Usuario.png')}}" width="40" height="40">
+            </a>
+      </button>
+      <ul class="dropdown-menu dropdown-user">
+        <a class="badge badge-light" class="dropdown-item" href="/login">
+          <img src="{{url_for('static', filename='icon/1.png')}}" width="25" height="25">
+          Iniciar Sesión
+        </a>
+        <a class="badge badge-light" class="dropdown-item" href="/Registrar">
+          <img src="{{url_for('static', filename='icon/5.png')}}" width="25" height="25">
+          Registrar
+        </a>
+      </ul>
+    </li>
+  </ul>
+</div>
+</nav>
+</div>
+
+</br>
+
+{% block content %}
+{% endblock%}
+
+<div class="container">
+	<footer class="pt-5 my-md-5 pt-md-5 border-top">
+		<div class="row">
+			<div class="col-6 col-md">
+				<h5 style="color:#000000;">Información útil</h5>
+				<ul class="list-unstyled text-small">
+					<li><a  href="#" style="color: #009BDB;">Contacto & Ayuda</a></li>
+					<li><a  href="#" style="color: #009BDB;">Consejos de seguridad</a></li>
+					<li><a  href="#" style="color: #009BDB;">Terminos & Condiciones</a></li>
+					<li><a  href="#" style="color: #009BDB;">Acerca de HSD Plus</a></li>
+					<li><a href="#" style="color: #009BDB;">Sumate a nosotros</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md">
+				<h5 style="color:#000000;">Servicios</h5>
+				<ul class="list-unstyled text-small">
+					<li><a href="./vista/Registrar.php" style="color: #009BDB;">Registrate</a></li>
+					<li><a href="#" style="color: #009BDB;">Reserva</a></li>
+					<li><a href="#" style="color: #009BDB;">Consulta</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md">
+				<h5 style="color:#000000;">Contactenos</h5>
+				<ul class="list-unstyled text-small">
+					<li><a  href="#" style="color: #009BDB;">Equipo</a></li>
+					<li><a  href="#" style="color: #009BDB;">Localización</a></li>
+					<li><a  href="#" style="color: #009BDB;">Privacidad</a></li>
+					<li><a  href="#" style="color: #009BDB;">Terminos</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-12 col-md">
+      <small class="d-block mb-3 text-center text-muted">Copyright &copy; 2018-2021 HSD Plus</small>
+    </div>
+	</footer>
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+    
+    </html>

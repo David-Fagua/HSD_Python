@@ -4,8 +4,8 @@
 <head>
 	<title>HSD PLUS</title>
 
-'partials/head.py'
-'partials/menu.py'
+  {% extends "layout.html" %}
+  {% block content %}
 
 </br>
 
@@ -25,35 +25,41 @@
       <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
 		</ol>
   <div class="carousel-item">
-      <img src="assets/img/corporativo.jpg" width="100" height="400px " class="d-block w-100" alt="...">
+      <img src="{{url_for('static', filename='img/corporativo.jpg')}}" width="100" height="400px " class="d-block w-100" alt="...">
     </div>
 	<div class="carousel-inner">
     <div class="carousel-item active">
-      <img  src="assets/img/1.jpg" width="100" height="400px whilt " class="d-block w-100" alt="...">
+      <img  src="{{url_for('static', filename='img/1.jpg')}}" width="100" height="400px whilt " class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="assets/img/2.jpg" width="100" height="400px " class="d-block w-100" alt="...">
+      <img src="{{url_for('static', filename='img/2.jpg')}}" width="100" height="400px " class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="assets/img/3.jpg" width="100" height="400px " class="d-block w-100" alt="...">
+      <img src="{{url_for('static', filename='img/3.jpg')}}" width="100" height="400px " class="d-block w-100" alt="...">
     </div>
      <div class="carousel-item">
-      <img src="assets/img/4.jpg" width="100" height="400px " class="d-block w-100" alt="...">
+      <img src="{{url_for('static', filename='img/4.jpg')}}" width="100" height="400px " class="d-block w-100" alt="...">
     </div>
      <div class="carousel-item">
-      <img src="assets/img/5.jpg" width="100" height="400px " class="d-block w-100" alt="...">
+      <img src="{{url_for('static', filename='img/5.jpg')}}" width="100" height="400px " class="d-block w-100" alt="...">
     </div>
      <div class="carousel-item">
-      <img src="assets/img/6.jpg" width="100" height="400px " class="d-block w-100" alt="...">
+      <img src="{{url_for('static', filename='img/6.jpg')}}" width="100" height="400px " class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="assets/img/7.jpg" width="100" height="400px " class="d-block w-100" alt="...">
+      <img src="{{url_for('static', filename='img/7.jpg')}}" width="100" height="400px " class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="assets/img/8.jpg" width="100" height="400px " class="d-block w-100" alt="...">
+      <img src="{{url_for('static', filename='img/8.jpg')}}" width="100" height="400px " class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="assets/img/9.jpg" width="100" height="400px " class="d-block w-100" alt="...">
+      <img src="{{url_for('static', filename='img/9.jpg')}}" width="100" height="400px " class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for('static', filename='img/10.jpg')}}" width="100" height="400px " class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for('static', filename='img/11.jpg')}}" width="100" height="400px " class="d-block w-100" alt="...">
     </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -93,7 +99,7 @@
     <small  class="d-block mb-3 text-right text-muted">14 Jun</small>
   </div>
   <div class="col-md-3 order-md-1">
-    <img src="assets/img/11.jpg" class="card-img-top" alt="assets/img">
+    <img src="{{url_for('static', filename='img/11.jpg')}}" class="card-img-top" alt="assets/img">
   </div>
 </div>
 </br>
@@ -112,7 +118,7 @@
     <small  class="d-block mb-3 text-right text-muted">6 Jun</small>
   </div>
   <div class="col-md-3 order-md-1">
-    <img src="assets/img/2.jpg" class="card-img-top" alt="assets/img">
+    <img src="{{url_for('static', filename='img/2.jpg')}}" class="card-img-top" alt="assets/img">
   </div>
 </div>
 </br>
@@ -131,7 +137,7 @@
     <small  class="d-block mb-3 text-right text-muted">1 Jun</small>
   </div>
   <div class="col-md-3 order-md-1">
-    <img src="assets/img/3.jpg" class="card-img-top" alt="assets/img">
+    <img src="{{url_for('static', filename='img/3.jpg')}}" class="card-img-top" alt="assets/img">
   </div>
 </div>
 </br>
@@ -150,12 +156,11 @@
     <small  class="d-block mb-3 text-right text-muted">29 May</small>
   </div>
   <div class="col-md-3 order-md-1">
-    <img src="assets/img/4.jpg" class="card-img-top" alt="assets/img">
+    <img src="{{url_for('static', filename='img/4.jpg')}}" class="card-img-top" alt="assets/img">
   </div>
 </div>
 
 </br>
-  
-<?py include 'partials/menufinal.py';?>
-<?py include 'partials/footer.py';?>
-S
+
+{% endblock %}
+    

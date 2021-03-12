@@ -3,8 +3,8 @@
 <head>
 	<title>HSD PLUS</title>
 
-  <?py include 'partials/head.py';?>
-  <?py include 'partials/menu.py';?>
+  {% extends "layout.html" %}
+  {% block content %}
 
 <div>
   <center>
@@ -19,7 +19,7 @@
     <div class="col-sm-4">
       <div class="card">
         <div class="card-body">
-          <img src="assets/img/A.png" class="card-img-top" alt="...">
+          <img src="{{url_for('static', filename='img/A.png')}}" class="card-img-top" alt="...">
           <h5>Harold Rojas</h5>
           <p class="card-text">Ingeniero de sistemas, conocimiento en administración con capacidad de trabajo en equipo, desempeño alto en entornos de alta presión,   fortaleza para tomar decisiones con objetividad, disposición para el aprendizaje y el conocimiento, hábil para la planeación, gestión y ejecución de  proyectos.</p>
         </div>
@@ -28,7 +28,7 @@
     <div class="col-sm-4">
       <div class="card">
         <div class="card-body">
-          <img src="assets/img/B.jpg" class="card-img-top" alt="...">
+          <img src="{{url_for('static', filename='img/B.jpg')}}" class="card-img-top" alt="...">
           <h5>Samuel Salguero</h5>
           <p class="card-text">Ingeniero de sistemas, tecnico de sistema, Capacidad de trabajo en equipo con abogados, fortaleza para tomar decisiones con objetividad, disposición para el aprendizaje y el conocimiento, hábil para la planeación, gestión y ejecución de  proyectos.</p>
         </div>
@@ -37,7 +37,7 @@
     <div class="col-sm-4">
       <div class="card">
         <div class="card-body">
-          <img src="assets/img/C.png" class="card-img-top" alt="...">
+          <img src="{{url_for('static', filename='img/C.png')}}" class="card-img-top" alt="...">
           <h5>David Fagua</h5>
           <p class="card-text">Ingeniero de sistemas y diseñador grafico, Capacidad de trabajo en equipo, fortaleza para tomar decisiones con objetividad, disposición para el aprendizaje y el conocimiento, hábil para la planeación, creatividad, gestión y ejecución de  proyectos.</p>
         </div>
@@ -54,5 +54,4 @@
     </center>
 </div>
   
-<?py include 'partials/menufinal.py';?>
-<?py include 'partials/footer.py';?>
+{% endblock %}
