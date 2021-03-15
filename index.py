@@ -38,5 +38,13 @@ def login():
 def Registrar():
     return render_template('vista/Registrar.html')
 
+@app.route('/Recordar')
+def Recordar():
+    return render_template('vista/Recordar.html')
+
+@app.route('/Usuario')
+def Usuario():
+    return render_template('vista/Admin/Usuario.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
